@@ -1,0 +1,6 @@
+package com.projeto.musikada.facade;
+
+public interface MusikakaUserFacade {
+
+	void createUser(UserRequestTO to);
+}

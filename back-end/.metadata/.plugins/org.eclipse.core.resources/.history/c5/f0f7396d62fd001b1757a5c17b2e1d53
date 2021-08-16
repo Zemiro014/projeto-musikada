@@ -1,0 +1,26 @@
+package com.projeto.musikada.web;
+
+import javax.inject.Inject;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.projeto.musikada.facade.MusikakaUserFacadeApp;
+import com.projeto.musikada.to.UserRequestTO;
+
+@Path("/users")
+public class UserResource {
+	
+	@Inject
+	private MusikakaUserFacadeApp facade;
+	
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response createUser(UserRequestTO to) {
+		facade.createUser(to);
+		return Response.status(200).build();
+	}
+
+}

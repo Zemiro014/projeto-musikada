@@ -1,0 +1,5 @@
+package com.projeto.musikada.web;
+
+public class UserResource {
+
+}

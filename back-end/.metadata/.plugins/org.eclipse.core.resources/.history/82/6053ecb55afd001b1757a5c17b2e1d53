@@ -1,0 +1,5 @@
+package com.projeto.musikada.repositories;
+
+public interface UserRepository {
+
+}

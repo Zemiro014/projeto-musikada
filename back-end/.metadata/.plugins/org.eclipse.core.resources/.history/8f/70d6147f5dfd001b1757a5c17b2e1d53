@@ -1,0 +1,20 @@
+package com.projeto.musikada.service;
+
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
+
+import com.projeto.musikada.to.UserRequestTO;
+
+@ApplicationScoped
+public class UserServiceImpl implements UserServiceApp{
+
+	@Inject
+	private static EntityManager em;
+	
+	@Override
+	public void createUser(UserRequestTO to) {
+		
+	}
+
+}

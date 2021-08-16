@@ -1,0 +1,10 @@
+package com.projeto.musikada.service;
+
+import javax.enterprise.context.ApplicationScoped;
+
+import com.projeto.musikada.to.UserRequestTO;
+
+@ApplicationScoped
+public interface UserServiceApp {
+	void createUser(UserRequestTO to);
+}

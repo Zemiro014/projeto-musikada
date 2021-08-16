@@ -1,0 +1,5 @@
+package com.projeto.musikada.facade;
+
+public class MusikadaUserFacadeImpl implements MusikakaUserFacadeApp{
+
+}
