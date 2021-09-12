@@ -56,7 +56,11 @@
 <script>
 export default {
   name: "TopVideos",
-  data() {},
+    data() {
+    return{
+      
+    }
+  },
 };
 </script>
 <style scoped>

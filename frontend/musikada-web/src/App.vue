@@ -1,18 +1,26 @@
 <template>
-    <div id="app">
+  <div id="app">
+    <Header
+      v-bind:Perfil="'Hulk'"
+      v-bind:Entrar="'Iron Man'"
+      v-bind:Sair="'BatMan'"
+    />
+    <router-view>
       <Home />
+    </router-view>
   </div>
 </template>
 
 <script>
-import Home from '@/views/Home.vue'
+import Header from "@/components/Header.vue";
+import Home from "@/views/Home.vue";
 
 export default {
   name: "App",
-  components:{
-    Home
+  components: {
+    Home,
+    Header,
   },
-  created: function () {
-  },
+  created: function () {},
 };
 </script>

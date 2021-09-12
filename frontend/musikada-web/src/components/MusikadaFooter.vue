@@ -1,32 +1,47 @@
 <template>
-  <div class="footer-home">
-    <div id="rodape">
-      <p id="copyright">
-        Copyright &copy; 2020 - Todos direitos reservados a Musikada
-      </p>
-      <img src="image/logo.png" alt="logotipo" id="logorodape" />
-      <ul id="musikada">
-        <li><strong>Musikada</strong></li>
-        <li><a href="homemusikada.html">Home</a></li>
-        <li><a href="sobrenos.html">Sobre nós</a></li>
-        <li><a href="">Termos e Politicas</a></li>
-      </ul>
-      <ul id="organizador">
-        <li><strong>Para organizador de eventos</strong></li>
-        <li><a href="">Como funciona</a></li>
-        <li><a href="">Serviços</a></li>
-        <li><a href="">Portal</a></li>
-      </ul>
-      <ul id="central">
-        <li>Central de Ajuda</li>
-        <li><a href="faleconosco.html">Fale conosco</a></li>
-      </ul>
-      <div class="rede">
-        <h1>Siga nos</h1>
-        <a href=""><img src="image/facebook.png" alt="" /></a>
-        <a href=""><img src="image/instagram.png" alt="" /></a>
-        <a href=""><img src="image/twitter.png" alt="" /></a>
-        <a href=""><img src="image/youtube.png" alt="" /></a>
+  <div class="footer">
+    <div class="footer-left">
+      <div class="footer-logo-menu">
+        <div class="footer-logo">
+          <b-img src="@/assets/images/logo.png" fluid alt="Fluid image"></b-img>
+        </div>
+        <div class="footer-menu">
+          <h5>Musikada</h5>
+          <div class="menus">
+            <ul>
+              <li>Home</li>
+              <li>Sobre nós</li>
+              <li>Termos e Políticas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright-redes">
+        <div class="footer-copyright">
+          <p>Copyright © 2019 - Todos direitos reservados a Musikada</p>
+        </div>
+        <div class="footer-redes">
+          <h5>Siga-nos</h5>
+          <div class="redes" style="font-size: 1.5rem">
+            <div class="facebook"> <b-icon icon="facebook"></b-icon></div>
+            <div class="instagram"><b-icon icon="instagram"></b-icon></div>
+            <div class="linkedin"><b-icon icon="linkedin"></b-icon></div>
+            <div class="twitter"><b-icon icon="twitter"></b-icon></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="para-organizadores">
+        <h5>Para organizadores de evento</h5>
+        <ul>
+          <li>Como funciona</li>
+          <li>Serviços</li>
+        </ul>
+      </div>
+      <div class="central-ajuda">
+        <h5>Central de ajuda</h5>
+        <p>Fale conosco</p>
       </div>
     </div>
   </div>
@@ -35,79 +50,83 @@
 <script>
 export default {
   name: "MusikadaFooter",
-  data() {},
+  data() {
+    return {};
+  },
 };
 </script>
 <style scoped>
-.footer-home {
+.footer {
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 25px;
+  justify-content: space-between;
 }
-
-#rodape {
-  background-color: black;
-  color: white;
-  display: block;
+.footer-right {
+  width: 50%;
+  float: right;
+  display: flex;
+  justify-content: space-between;
 }
-
-p #copyright {
-  position: relative;
-  top: 100px;
+.footer-logo-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
-#logorodape {
-  width: 120px;
-  height: 80px;
-  position: relative;
-  margin-left: 380px;
+.footer-menu, .para-organizadores, .central-ajuda{
+  text-align: left;
 }
-ul #musikada {
-  list-style: none;
-  position: relative;
-  margin-left: 510px;
-  top: -60px;
+.footer-menu ul, .para-organizadores ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: right;
 }
-ul #musikada li {
-  margin: 4px;
+.footer-menu ul li:hover{
+  cursor: pointer;
 }
-ul #organizador {
-  list-style: none;
-  position: relative;
-  margin-left: 680px;
-  top: -140px;
+.para-organizadores ul li:hover{
+  cursor: pointer;
 }
-ul #organizador li {
-  margin: 4px;
+.central-ajuda p:hover{
+  cursor: pointer;
 }
-ul#central {
-  list-style: none;
-  position: relative;
-  margin-left: 910px;
-  top: -200px;
+.footer-copyright-redes {
+  display: flex;
+   justify-content: space-between;
 }
-ul#central a {
-  margin: 4px;
+.footer-copyright{
+  text-align: unset;
+  margin-top: 20%;
 }
-footer div a {
-  color: white;
-  text-decoration: none;
+.footer-copyright p{
+  margin: 0;
 }
-footer div a:hover {
-  text-decoration: underline;
+.footer-redes {
+  padding-right: 20px;
 }
-.rede {
-  position: relative;
-  margin-top: -120px;
-  margin-left: 380px;
+.redes {
+  display: flex;
 }
-.rede h1 {
-  font-size: 1.3em;
+.footer-redes h5, .footer-menu h5, .central-ajuda h5, .para-organizadores h5{
+  font-weight: bold;
 }
-
-.rede a {
-  display: inline-flex;
-  margin: 1.5%;
+.facebook,
+.instagram,
+.linkedin {
+  padding-right: 15px;
 }
-.rede img {
-  width: 30px;
+.facebook,
+.instagram,
+.linkedin,
+.twitter :hover{
+  cursor: pointer;
+}
+.img-fluid {
+  max-width: 100px;
+  height: auto;
 }
 </style>
