@@ -1,41 +1,27 @@
 <template>
   <div>
-    <div>
-      <b-card-group deck>
-        <b-row>
+    <b-container class="bv-example-row">
+      <b-row> 
+         <b-col>
+            <EventCard />
+          </b-col>
+          <b-col>
+            <EventCard />
+          </b-col>
+           <b-col>
+            <EventCard />
+          </b-col>
+          <b-col>
+            <EventCard />
+          </b-col>
           <b-col>
             <EventCard />
           </b-col>
           <b-col>
             <EventCard />
           </b-col>
-        </b-row>
-      </b-card-group>
-    </div>
-    <div class="mt-3">
-      <b-card-group deck>
-         <b-row>
-          <b-col>
-            <EventCard />
-          </b-col>
-          <b-col>
-            <EventCard />
-          </b-col>
-        </b-row>
-      </b-card-group>
-    </div>
-    <div class="mt-3">
-      <b-card-group deck>
-        <b-row>
-          <b-col>
-            <EventCard />
-          </b-col>
-          <b-col>
-            <EventCard />
-          </b-col>
-        </b-row>
-      </b-card-group>
-    </div>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
