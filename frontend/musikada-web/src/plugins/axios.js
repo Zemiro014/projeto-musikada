@@ -10,8 +10,6 @@ axios.defaults.headers.common['parceiro'] = 'BPP';
 
 let config = {
     baseURL: process.env.baseURL || process.env.apiUrl || "http://localhost:3000/api"
-        // timeout: 60 * 1000, // Timeout
-        // withCredentials: true, // Check cross-site Access-Control
 };
 
 const _axios = axios.create(config);

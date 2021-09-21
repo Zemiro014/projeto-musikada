@@ -4,34 +4,32 @@
       <img src="@/assets/images/sumer.png" fluid alt="Responsive image" />
     </div>
     <div class="content-event-card">
-      <h4>SABADÂO QUALQUER</h4>
-      <p>20 DE MAIO</p>
-      <p>Vila da Gamek 2</p>
+      <h4>{{ description }}</h4>
+      <p>{{ data }}</p>
+      <p>{{ local }}</p>
     </div>
     <div class="icons-event-card">
-        <div class="icons-heart">
-          <b-icon icon="heart" font-scale="1.5"></b-icon>
-        </div>
-        <div class="icons-share">
-          <b-icon icon="share-fill" font-scale="1.5"></b-icon>
-        </div>
+      <div class="icons-heart">
+        <b-icon icon="heart" font-scale="1.5"></b-icon>
+      </div>
+      <div class="icons-share">
+        <b-icon icon="share-fill" font-scale="1.5"></b-icon>
+      </div>
     </div>
   </div>
 </template>
 <script>
 export default {
   name: "EventCard",
-  props: ["urlImage"],
+  props: ["urlImage", "description", "local", "data"],
   data() {
     return {};
   },
-  mounted() {
-    console.log(this.urlImage);
-  },
+  mounted() {},
   methods: {
-      mostrarInfo(){
-          this.$router.push({name:"EventsView"});
-      }
+    mostrarInfo() {
+      this.$router.push({ name: "EventsView" });
+    },
   },
 };
 </script>
@@ -39,11 +37,13 @@ export default {
 .event-card {
   padding: 15px;
   border-radius: 10px;
-  width: 420px;
+  width: 350px;
   font-size: 18px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
-.header-event-card, .icons-heart, .icons-share:hover {
+.header-event-card,
+.icons-heart,
+.icons-share:hover {
   cursor: pointer;
 }
 .header-event-card img {
@@ -68,6 +68,6 @@ export default {
   align-items: center;
 }
 .icons-heart {
-    padding-right: 25px;
+  padding-right: 25px;
 }
 </style>

@@ -29,9 +29,12 @@ export default {
     TopVideos,
   },
   data() {
-      return {
-      }
-    }
+    return {
+      ciphersData: [],
+    };
+  },
+  methods: {
+  },
 };
 </script>
 
@@ -41,7 +44,7 @@ export default {
   flex-direction: row;
   text-align: center;
 }
-.topEventos{
+.topEventos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +55,7 @@ export default {
   width: 50%;
   float: left;
 }
-.topCipher{
+.topCipher {
   border-right: 8px;
 }
 </style>

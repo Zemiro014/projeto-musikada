@@ -14,7 +14,7 @@
           <b-nav-item @click="gotToCiphers">Cifras</b-nav-item>
           <b-nav-item @click="gotToEvents">Eventos</b-nav-item>
           <b-nav-item @click="gotToAbout">Sobre nós</b-nav-item>
-          <b-nav-item ></b-nav-item>
+          <b-nav-item></b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -82,21 +82,21 @@ export default {
       ];
       this.objeto = objectoLocal;
     },
-    gotToSinger(){
-      this.$router.push({name:"SingerView"});
+    gotToSinger() {
+      this.$router.push({ name: "SingerView" });
     },
-    gotToCiphers(){
-      this.$router.push({name:"CiphersView"});
+    gotToCiphers() {
+      this.$router.push({ name: "CiphersView" });
     },
-    gotToHome(){
-      this.$router.push({name:"Home"});
+    gotToHome() {
+      this.$router.push({ name: "Home" });
     },
-    gotToEvents(){
-      this.$router.push({name:"EventsView"});
+    gotToEvents() {
+      this.$router.push({ name: "EventsView" });
     },
-    gotToAbout(){
-      this.$router.push({name:"AboutUsView"});
-    }
+    gotToAbout() {
+      this.$router.push({ name: "AboutUsView" });
+    },
   },
   components: {},
 };
