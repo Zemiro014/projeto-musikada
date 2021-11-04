@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.persistence.Id"/>
     <fullyQualifiedTypeName name="javax.annotation.Generated"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="javax.enterprise.context.ApplicationScoped"/>
@@ -14,4 +13,43 @@
     <fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
     <fullyQualifiedTypeName name="javax.inject.Inject"/>
     <fullyQualifiedTypeName name="com.projeto.musikada.facade.MusikakaUserFacadeApp"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="com.musikada.user.util.ConvertibleService"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="com.musikada.user.dto.request.UserRequest"/>
+    <fullyQualifiedTypeName name="com.musikada.user.util.ObjectConversor"/>
+    <fullyQualifiedTypeName name="com.musikada.user.services.UserService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="com.musikada.user.dto.response.UserResponse"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.musikada.user.util.Convertible"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="com.musikada.user.repositories.UserRepository"/>
+    <fullyQualifiedTypeName name="com.musikada.user.entities.User"/>
+    <fullyQualifiedTypeName name="com.musikada.user.components.JwtTokenEnhancer"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="com.musikada.tickets.repositories.TicketRepository"/>
+    <fullyQualifiedTypeName name="com.musikada.tickets.entities.Ticket"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.musikada.tickets.services.TicketService"/>
+    <fullyQualifiedTypeName name="com.musikada.tickets.dto.response.TicketResponseDTO"/>
+    <fullyQualifiedTypeName name="com.musikada.tickets.dto.request.TicketRequestDTO"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="com.musikada.tickets.util.ObjectConversor"/>
 </qualifiedTypeNameHistroy>

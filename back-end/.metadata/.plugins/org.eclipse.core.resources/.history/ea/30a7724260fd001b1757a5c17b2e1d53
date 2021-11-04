@@ -1,8 +1,0 @@
-package com.projeto.musikada.facade;
-
-import com.projeto.musikada.to.UserRequestTO;
-
-public interface MusikakaUserFacadeApp {
-
-	void createUser(UserRequestTO to);
-}

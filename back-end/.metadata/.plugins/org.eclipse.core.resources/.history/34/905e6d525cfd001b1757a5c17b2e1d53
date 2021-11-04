@@ -1,5 +1,0 @@
-package com.projeto.musikada.service;
-
-public interface UserServiceApp {
-
-}

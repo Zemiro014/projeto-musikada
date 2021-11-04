@@ -1,8 +1,0 @@
-package com.projeto.musikada.service;
-
-import javax.enterprise.context.ApplicationScoped;
-
-@ApplicationScoped
-public class UserServiceImpl implements UserServiceApp{
-
-}
