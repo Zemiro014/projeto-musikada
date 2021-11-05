@@ -31,7 +31,7 @@ public class UserController {
 		return ResponseEntity.ok(obj);
 	}
 	
-	@GetMapping(value = "/{email}")
+	@GetMapping(value = "email/{email}")
 	public ResponseEntity<UserResponse> findByEmail(@PathVariable String email) {
 		UserResponse obj = service.findByEmail(email);
 		return ResponseEntity.ok(obj);
